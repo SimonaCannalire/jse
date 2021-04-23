@@ -29,5 +29,12 @@ public class Narrowing {
         // [0111 1111][1111 1111][1111 1111][1111 1111]
         int maxInInt = (int) aLargeValue;
         System.out.println("Three billions (double) casted to int gives int max value  " + maxInInt);
+        
+    }
+    static void f(int i) {
+    	if(i >= -128 && i<= 127 ) {
+    		byte b = (byte) i;
+    		System.out.println(b);
+    	}
     }
 }
