@@ -1,7 +1,8 @@
 /.classpath
-/.project
-/target/
+/.project/
+/.target/
 /.settings/
 /bin/
 /.idea/
 /jse.iml
+/target/
