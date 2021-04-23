@@ -3,6 +3,7 @@ package m01.s04;
 public class Variable {
     public static void main(String[] args) {
         int aPrimitive = 42;
+     
         String aReference = "42";
 
         System.out.println(aReference);
