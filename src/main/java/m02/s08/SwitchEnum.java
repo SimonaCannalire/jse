@@ -14,5 +14,12 @@ public class SwitchEnum {
             System.out.println("Ready for a new week?");
             break;
         }
+        
+        switch (day) {
+        case SATURDAY:
+        	break;
+        case SUNDAY:
+        	break; 
+        }
     }
 }

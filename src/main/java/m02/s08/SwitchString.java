@@ -2,7 +2,7 @@ package m02.s08;
 
 public class SwitchString {
     public static void main(String[] args) {
-        String value = "1";
+        String value = "2";
 
         // ...
 
@@ -12,8 +12,7 @@ public class SwitchString {
             break;
         case "2":
             System.out.println("value is two?");
-            // !!! fall through !!!
-            // !!! no break needed here !!!
+            //FALL THROUGH
         case "3":
             System.out.println("value is three?");
             break;
