@@ -4,8 +4,12 @@ import java.util.Arrays;
 
 public class SwitchDays {
     public static void main(String[] args) {
-        WeekDay today = args.length == 0 ? WeekDay.FRIDAY : WeekDay.MONDAY;
-
+        //WeekDay today = args.length == 0 ? WeekDay.FRIDAY : WeekDay.MONDAY;
+    	WeekDay today = WeekDay.FRIDAY;
+    	if (args.length != 0) {
+    	today = WeekDay.MONDAY;
+    	}
+    	
         switch (today) {
         case MONDAY:
             System.out.println("Chinese");
