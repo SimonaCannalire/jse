@@ -7,5 +7,11 @@ public class Exercise3 {
          * (1) the number of arguments passed to this main
          * (2) each argument
          */
+    	System.out.println("You passed me " + args.length + " argument(s)");
+    	
+    	for (int i=0; i<args.length; i++) {
+    		System.out.println(args[i]);
+    	}
     }
+    
 }
