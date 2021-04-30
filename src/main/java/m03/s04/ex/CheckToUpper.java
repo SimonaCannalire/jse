@@ -18,7 +18,7 @@ public class CheckToUpper {
     public static void testBob() {
         Exercise ex = new Exercise();
 
-        String input = "Bob";
+        String input = "bob";
         String actual = ex.toUpper(input);
         String expected = "BOB";
 

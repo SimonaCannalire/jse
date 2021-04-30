@@ -2,7 +2,7 @@ package m03.s04.ex;
 
 public class Exercise {
 	private static final int GAP = 'a' - 'A'; // charset independent
-//    private static final int ALPHABET_SIZE = 26;  // standard alphabet
+	// private static final int ALPHABET_SIZE = 26; // standard alphabet
 
 	/**
 	 * A simpler version of String.toUpperCase()
@@ -15,28 +15,22 @@ public class Exercise {
 	 * @return uppercase version of input
 	 */
 	public String toUpper(String s) {
-		// TODO: create an uppercase version of the input and return it
-		// char c = 'c';
-		// char x = (char) (c - GAP);
-		// return s;
+		if (s == null) {
+			return null;
+		}
+
 		StringBuilder result = new StringBuilder();
 		{
-
 			for (int i = 0; i < s.length(); i++) {
 				char c = s.charAt(i);
 				if (c >= 'a' && c <= 'z') {
-					c = (char) (c - GAP);
-				} else {
-					i++;
-					result.append(c);
-					return result.toString();
+					c = (char) (c - GAP); //c -= GAP; qui il cast è implicito.
 				}
+				result.append(c);
 			}
-			System.out.println(toUpper("mocc a mamt"));
+			return result.toString();
 		}
-		return s;
-	}
-
+	}	
 	/**
 	 * Encrypt an uppercase string using the Caesar's algorithm
 	 * 
