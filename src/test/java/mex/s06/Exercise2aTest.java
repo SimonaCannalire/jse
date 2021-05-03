@@ -13,4 +13,11 @@ class Exercise2aTest {
 
         assertThat(actual, is(expected));
     }
+//    @Test
+//    void averageNull() {
+//    	double actual = Exercise2a.average(null);
+//    	double expected = 2.0;
+//    	
+//    	assertThat(actual, is(expected));
+//    }
 }
