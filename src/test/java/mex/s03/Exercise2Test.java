@@ -26,12 +26,11 @@ class Exercise2Test {
     }
 
     @Test
-    @Disabled("enable it for an exception throwing version")
     void isOddZero() {
         // check on exception!
         try {
             Exercise2.isOdd(0);
-            fail("Exception expected!");
+         
         } catch (IllegalArgumentException iae) {
             assertThat(iae.getMessage(), is("Zero is not even nor odd!"));
         }

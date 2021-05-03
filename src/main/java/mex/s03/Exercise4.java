@@ -9,7 +9,13 @@ public class Exercise4 {
      * @return false during weekend or holiday
      */
     public static boolean isAlarmSet(WeekDay day, boolean vacation) {
-        // TODO
-        return false;
-    }
+        if (vacation) {
+        	return false;
+        }
+        if (day == WeekDay.SATURDAY || day == WeekDay.SUNDAY) {
+        	return false;
+        } else {
+        	return true;
+        }
+    } // potrei farlo anche con switch perché day è enum.
 }

@@ -8,7 +8,10 @@ public class Exercise2 {
      * @return true if odd
      */
     public static boolean isOdd(int value) {
-        // TODO
-        return false;
+       if (value % 2 == 0) { //se diviso x 2 no resto = even
+        	return false;
+        } else {
+        	return true; //ANCHE SOLO return value % 2 != 0;       	
+        }
     }
 }
