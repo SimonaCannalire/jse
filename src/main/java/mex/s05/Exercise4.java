@@ -9,7 +9,8 @@ public class Exercise4 {
      * @return a string, same of input but without the character in the specified position
      */
     public static String removeChar(String s, int pos) {
-        // TODO
-        return "";
+        StringBuilder result = new StringBuilder(s);
+        result.deleteCharAt(pos);
+        return result.toString();
     }
 }
