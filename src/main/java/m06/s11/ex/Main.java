@@ -3,17 +3,29 @@ package m06.s11.ex;
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
-        // TODO: (1) put objects of (at least) three different types in this array
-        Vehicle[] vehicles = {};
-        System.out.println(Arrays.toString(vehicles));
+	public static void main(String[] args) {
 
-        // TODO: (2) let all vehicle steer in alternate directions
+		// nell'array vehicles metto reference ad oggetti
+		// della classe Vehicle
+		Vehicle[] vehicles = { new Bus(), new Car(), new MotorBike() };
+		System.out.println(Arrays.toString(vehicles));
 
-        // TODO: (3) put objects of (at least) three different types in this array
-        Conditioning[] conditioned = {};
-        System.out.println(Arrays.toString(conditioned));
+		for (Vehicle vehicle : vehicles) {
+			vehicle.steer(false);
+		}
 
-        // TODO: (4) set the temperature of each conditioned to 20
-    }
+		Conditioning[] elements = { new Flat(15), new Flat(23), new Bus(), new Car() };
+		// creo una variabile che è un array di tipo conditioning con uno spazio per
+		// una reference che mi rimanda a nuovo oggetto flat di interfaccia/tipo
+		// conditioning
+		System.out.println(Arrays.toString(elements));
+
+		for (Conditioning element : elements) {
+			element.setTemperature(20);
+			// element/current = elemento corrente
+		}
+		for (int i = 0; i < elements.length; i++) {
+			elements[i].setTemperature(18);
+		}
+	}
 }
